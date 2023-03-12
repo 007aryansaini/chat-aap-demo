@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Chat App</title>
+    <script
+      src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"
+      type="application/javascript"
+    ></script>
+  </head>
+  <body>
+    <div>
+      <button id="connect">Connect Wallet</button>
+      <div>
+        <span>
+          Address :
+          <span id="wallet-address"></span>
+        </span>
+      </div>
+      <button id="regiter">Register for chatting</button>
+
+      <div>
+        <form>
+          <input type="text" id="address" placeholder="To" />
+          <input type="text" id="input" placeholder="Enter a message" />
+          <input type="submit" id="send" value="send" />
+        </form>
+
+        <ul id="container">
+          Messages Sent by you
+        </ul>
+      </div>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>
